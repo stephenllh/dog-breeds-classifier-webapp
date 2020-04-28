@@ -11,6 +11,7 @@ from flask import Flask
 import requests
 import torch
 import json
+import gdown
 
 with open("src/config.yaml", 'r') as stream:
     APP_CONFIG = yaml.full_load(stream)
@@ -106,7 +107,10 @@ def before_request():
     app.jinja_env.cache = {}
 
 
-model = load_model('models')
+url = 'https://drive.google.com/uc?id=1MSJFAPB4EkcboEkeuwtLkUivhxc6-XmO'
+output = 'model.pth'
+gdown.download(url, output, quiet=False) 
+model = load_model()
 
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
