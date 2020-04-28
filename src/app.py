@@ -108,7 +108,7 @@ def before_request():
 
 
 url = 'https://drive.google.com/uc?id=1MSJFAPB4EkcboEkeuwtLkUivhxc6-XmO'
-output = 'model.pkl'
+output = 'export.pkl'
 gdown.download(url, output, quiet=False) 
 model = load_model('app', output)
 
