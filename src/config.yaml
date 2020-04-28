@@ -9,3 +9,10 @@ about:
 
 code: https://github.com/stephenllh/web-deep-learning-classifier
 
+sampleImages:
+  - name: pembroke
+    url: https://i.imgur.com/MMC0Dko.jpeg
+  - name: golden retriever
+    url: https://i.pinimg.com/236x/aa/4b/db/aa4bdb98313775cee3f8d17afaca7fea.jpg
+
+
