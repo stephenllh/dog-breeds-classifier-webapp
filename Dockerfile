@@ -4,8 +4,6 @@ RUN apt update && \
     apt install -y python3-dev gcc
 
 WORKDIR app 
-# Install pytorch and fastai
-RUN pip install https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
 
 ADD requirements.txt .
 RUN pip install -r requirements.txt
