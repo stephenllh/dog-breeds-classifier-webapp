@@ -110,7 +110,10 @@ def before_request():
 url = 'https://drive.google.com/uc?id=1MSJFAPB4EkcboEkeuwtLkUivhxc6-XmO'
 output = 'export.pkl'
 gdown.download(url, output, quiet=False) 
-model = load_model('app', output)
+try:
+    model = load_model(model_name=output)
+except:
+    model = load_model('/app', output)
 
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
