@@ -7,8 +7,7 @@ WORKDIR app
 
 ADD requirements.txt .
 RUN pip install -r requirements.txt
-#pip install --no-cache-dir -r
-RUN pip uninstall torch
+
 ADD models models
 ADD src src
 
