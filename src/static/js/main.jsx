@@ -163,39 +163,9 @@ class MainPage extends React.Component {
         return (
             <div>
                 <h2>{APP_CONFIG.description}</h2>
-
-                <p>Select an image </p>
-
-                <Form>
-                    <FormGroup>
-                        <div>
-                            <p>Provide a Url</p>
-                            <div>
-
-                                <UncontrolledDropdown >
-                                    <DropdownToggle caret>
-                                        Sample Image Url
-                                    </DropdownToggle>
-                                    <DropdownMenu>
-                                        {sampleImages.map(si =>
-                                            <DropdownItem onClick={()=>this.sampleUrlSelected(si)}>
-                                                {si.name}
-                                            </DropdownItem>)
-                                        }
-
-                                    </DropdownMenu>
-                                </UncontrolledDropdown>
-
-                            </div>
-                            <Input value={this.state.url} name="file" onChange={(e)=>this._onUrlChange(e.target.value)}
-                            />
-                        </div>
-                    </FormGroup>
-
-                    <h3>OR</h3>
                     <FormGroup id={"upload_button"}>
                         <div>
-                            <p>Upload an image</p>
+                            <p>Please upload an image of a dog.</p>
                         </div>
                         <Label for="imageUpload">
                             <Input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" ref="file"
