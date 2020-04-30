@@ -168,6 +168,7 @@ class MainPage extends React.Component {
                             <p>Instructions: Upload an image of a dog by clicking on the "Upload" button. 
                                 Then click on the "Predict" button. 
                                 It might take about 10 seconds before it shows you the result.
+                                If you wish to delete the uploaded image, press "Clear" 
                             </p>
                         </div>
                         <Label for="imageUpload">

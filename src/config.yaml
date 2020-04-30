@@ -1,5 +1,5 @@
 title: Dog Breeds Classifier
-description: Ever wonder about the breed of the dog you saw on the street? This web app allows you to identify dog breeds using deep learning methods.
+description: Upload a dog image, and it will tell you its breed.
 about:
   This is a dog breeds classifier using deep learning built on top of PyTorch.
 
