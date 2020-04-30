@@ -162,10 +162,13 @@ class MainPage extends React.Component {
         const sampleImages = APP_CONFIG.sampleImages;
         return (
             <div>
-                <h2>{APP_CONFIG.description}</h2>
+                <h3>{APP_CONFIG.description}</h3>
                     <FormGroup id={"upload_button"}>
                         <div>
-                            <p>Please upload an image of a dog.</p>
+                            <p>Instructions: Upload an image of a dog by clicking on the "Upload" button. 
+                                Then click on the "Predict" button. 
+                                It might take about 10 seconds before it shows you the result.
+                            </p>
                         </div>
                         <Label for="imageUpload">
                             <Input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" ref="file"
@@ -190,8 +193,6 @@ class MainPage extends React.Component {
 
                         </div>
                     )}
-
-                </Form>
 
                 {this.renderPrediction()}
 
