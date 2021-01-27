@@ -1,5 +1,5 @@
 # Training the Image Classifier & Creating a Web App
-## Our example:  Food Images Classifier
+## Our example:  Dog Images Classifier
 
 The following were used for model **training** (see [requirements.txt](requirements.txt)):    
 - fastai:  version 1.0.60
